@@ -1,0 +1,16 @@
+{
+  "name": "simple-webserver",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:nkzren/node-simple-webserver.git",
+  "author": "nkzren",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {}
+}
