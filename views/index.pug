@@ -1,8 +1,5 @@
-html
-  head
-    title= title
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
-    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
-  body
-    div.p-5
-      h1.animate__animated.animate__pulse.animate__infinite.bg-primary.animate__slower= message
+extends layout.pug
+
+block content 
+  div.p-5
+    h1.animate__animated.animate__pulse.animate__infinite.bg-primary.animate__slower= message
