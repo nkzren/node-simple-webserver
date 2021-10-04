@@ -1,13 +1,39 @@
-html 
+doctype html
+html(lang="en") 
   head 
     title Simple Web Server - #{title}
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width, initial-scale=1, shrink-to-fit=no")
     block links
-      link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
       link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+      link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
   body 
     block header
-      h1 Test Layout Header 
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark 
+        a.navbar-brand(href="#") Navbar
+        button.navbar-toggler(type="button", data-toggle="collapse")
+          span.navbar-toggler-icon
+        div.collapse.navbar-collapse(id="navbarSupportedContent")
+          ul.navbar-nav.mr-auto 
+            li.nav-item.active
+              a.nav-link(href="#") Home
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href="#") Link
+            li.nav-item.dropdown 
+              a.nav-link.dropdown-toggle(href="#", id="navbarDropdown", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Dropdown
+              div.dropdown-menu(aria-labelledby="navbarDropdown")
+                a.dropdown-item(href="#") Action
+                a.dropdown-item(href="#") Other Action
+                div.dropdown-divider
+                a.dropdown-item(href="#") One more Action
+            li.nav-item
+              a.nav-link.disabled(href="#") Disabled
     block content
     block footer
       #footer 
         p Test page footer
+    block scripts 
+      script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js") 
+      script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js") 
+      script(type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js") 
