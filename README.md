@@ -14,15 +14,19 @@ O repo foi pensado para rodar 100% dentro do container docker. Caso não queira 
 As instruções abaixo são feitas para rodar com o make. Caso queira rodar sem ele, abra o `Makefile` e veja os comandos executados lá dentro
 
 * Cria a rede do docker
+
 `make setup`
 
 * Sobe o container
+
 `make start`
 
 * (dentro do container) Instala as dependências
+
 `yarn`
 
 * (dentro do container) Inicia a aplicação
+
 `yarn start`
 
 * O servidor fica disponível no `localhost` (porta 80 mesmo)
