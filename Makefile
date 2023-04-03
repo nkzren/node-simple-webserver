@@ -15,4 +15,4 @@ clean:
 
 setup:
 	@echo "Creating netowrk development..."
-	@docker network create --gateway=172.28.0.0/16 --subnet 172.28.0.0/16 development 2> /dev/null; true
+	@docker network create --gateway=172.28.0.1 --subnet 172.28.0.0/16 development 2> /dev/null; true
