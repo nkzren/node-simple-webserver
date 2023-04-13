@@ -8,8 +8,11 @@
   "scripts": {
     "start": "node src/index.js"
   },
+  "type": "module",
   "dependencies": {
+    "config": "^3.3.9",
     "express": "^4.17.1",
+    "ioredis": "^5.3.1",
     "pug": "^3.0.2"
   },
   "devDependencies": {}

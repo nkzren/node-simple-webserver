@@ -1,7 +1,8 @@
-const express = require('express');
+import express from 'express';
+import routes from './config/routes.js';
 const app = express();
 
-require('./config/routes')(app);
+routes(app);
 
 app.set('view engine', 'pug');
 

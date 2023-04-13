@@ -20,3 +20,5 @@ services:
       - LOCAL_BASE_URL=http://dev.simple-webserver.com.br:1234/
     volumes:
       - ${PWD}:/opt/app 
+  redis:
+    image: redis:7
